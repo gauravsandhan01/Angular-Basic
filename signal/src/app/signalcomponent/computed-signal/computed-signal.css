@@ -1,0 +1,13 @@
+p {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 10px 0;
+}
+
+p:last-child {
+  font-weight: bold;
+  color: #4CAF50; /* highlight the total price */
+  font-size: 20px;
+}
