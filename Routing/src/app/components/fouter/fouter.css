@@ -1,0 +1,23 @@
+.footer {
+  background-color: #7B3F00;  /* grape-inspired color */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #ffd700; /* gold-like color for links */
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}

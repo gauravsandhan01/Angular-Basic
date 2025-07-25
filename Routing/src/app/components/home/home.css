@@ -1,0 +1,104 @@
+body{
+    background: linear-gradient(135deg, #c247db, #27db7b, #a99036);
+
+}
+
+/* Navbar container background */
+.navbar {
+  background-color: #7B3F00 !important; /* grape brownish-purple */
+}
+
+/* Navbar brand/logo (if you add later) */
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Nav links default style */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+/* Nav links hover effect */
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important; /* gold-like on hover */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+  color: #ffd700 !important;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+/* Adjust form / login link on right */
+.d-flex .nav-link {
+  color: #fff !important;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.d-flex .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* Optional: remove bullets if form contains <li> */
+.d-flex {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive tweak (optional): increase padding on small screens */
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
+
+
+
+
+.dashboard-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  /*background-color: #fff; */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.dashboard-welcome h1 {
+  font-size: 65px;
+  color: #7B3F00; /* grape-inspired brownish-purple */
+  animation: fadeSlideUp 2s ease forwards;
+  opacity: 0;
+}
+
+.dashboard-welcome span {
+  display: inline-block;
+  color: #2d352e; /* fresh grape leaf green */
+  font-weight: bold;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
