@@ -1,0 +1,46 @@
+/* Page background and full-center layout */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a0572, #ab83a1);
+  color: rgb(165, 42, 42);
+  text-align: center;
+  padding: 30px;
+
+  /* Center everything */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  height: 100vh; /* full screen height */
+  margin: 0;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Button styles */
+button {
+  background-color: #ffd700; /* gold */
+  color: #333;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffb700;
+  transform: scale(1.05);
+}
+
+/* Optional: active state effect */
+button:active {
+  transform: scale(0.95);
+}

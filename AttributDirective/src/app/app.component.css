@@ -1,0 +1,42 @@
+/* Page setup */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Button container */
+div {
+  margin-top: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: #f1c40f; /* gold */
+  color: #333;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #d4ac0d;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,23 @@
+<p>ng-for works!</p>
+<ul>
+    <li *ngFor="let x of student">
+        {{x}}
+    </li>
+</ul>
+
+<li *ngFor="let fruit of fruits; let i = index; let first = first; let last = last">
+  {{ i }} - {{ fruit }} - First: {{ first }} - Last: {{ last }}
+</li>
+
+
+<div *ngFor="let category of categories">
+  <h3>{{ category.name }}</h3>
+  <ul>
+    <li *ngFor="let item of category.items">
+      {{ item }}
+    </li>
+  </ul>
+</div>
+
+ 
+

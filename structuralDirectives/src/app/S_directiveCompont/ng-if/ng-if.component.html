@@ -1,0 +1,20 @@
+<p>ng-if works!</p>
+<div>
+    <div *ngIf="divvisible">
+        <h2>welcome to ngIf</h2>
+    </div>
+
+    <div>
+        <button (click)=" showdiv()">show </button>
+        <button (click)=" hidediv()">hide</button>
+    </div>
+</div>
+
+<div>
+    <div *ngIf="number1==number2">
+        <h2> some thing new</h2>
+    </div>
+
+    <input type="text" [(ngModel)]="number1">
+    <input type="text" [(ngModel)]="number2">
+</div>

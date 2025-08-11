@@ -1,0 +1,39 @@
+/* Page background and layout */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4a148c, #7b1fa2);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* ngIf message box */
+h2 {
+  background-color: rgba(255, 215, 0, 0.2); /* semi-transparent gold */
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Buttons styling */
+button {
+  background-color: #ffd700; /* gold */
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffb700;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
