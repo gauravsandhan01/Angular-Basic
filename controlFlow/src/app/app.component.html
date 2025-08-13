@@ -1,0 +1,65 @@
+<h1>IF / ELSE</h1>
+
+@if (isLoggedIn) {
+  <p>Welcome back, User!</p>
+} @else {
+  <p>Please log in.</p>
+}
+
+<br>
+<h1>else if</h1>
+  <div>
+    @if(dayName=='mon'){
+      <span>monday</span>
+    }@else if(dayName=="tue"){
+      <span>tuesday</span>
+    }@else if(dayName =='wed'){
+      <span>Wensday</span>
+    }@else{
+      <span>enter the correct day</span>
+    }
+  </div>
+    
+  <div class>
+  <input type="text" [(ngModel)]="dayName" maxlength="3" placeholder="enter day starting">
+  </div>
+
+
+  <h1>For Loop</h1>
+
+  <ul>
+  @for (fruit of fruits; track fruit) {
+    <li> {{ fruit }}</li>
+  }
+</ul>
+
+
+<h1>Switch Case</h1>
+
+@switch (role) {
+  @case ('admin') { <p>Admin Dashboard</p> }
+  @case ('user') { <p>User Dashboard</p> }
+  @default { <p>Access Denied</p> }
+}
+
+
+<h1>NESTED CONDITIONS</h1>
+
+@if (users.length > 0) {
+  @for (user of users; track user) {
+    <div>
+      <strong>{{ user.name }}</strong>
+      @switch (user.role) {
+        @case ('admin') { <span> - Admin</span> }
+        @case ('editor') { <span> - Editor</span> }
+        @default { <span> - Viewer</span> }
+      }
+    </div>
+  }
+} @else {
+  <p>No users found.</p>
+}
+
+
+
+<router-outlet />
