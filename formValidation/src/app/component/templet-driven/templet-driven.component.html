@@ -1,0 +1,69 @@
+
+<form class="row g-3 needs-validation" #forms="ngForm">
+  <h2 style="text-align: center;">Templet-Driven </h2>
+  <div class="col-md-4">
+    <label >First name</label>
+    <input type="text" name="firstName"  #fname="ngModel" required [(ngModel)]="userObj.firstName" required>
+        <div class="text-danger">
+        @if (fname.errors?.['required'] && fname.touched) {
+        <span>This field is required</span>
+        }
+</div>
+
+  </div>
+  <div class="col-md-4">
+    <label >Last name</label>
+    <input type="text" name="lastName" #lname="ngModel" [(ngModel)]="userObj.lastName" required>
+    <div class="text-danger"  >
+      <span *ngIf="lname.errors?.['required'] && lname.touched" >this is required</span>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label >Username</label>
+      <input type="text" name="userName" [(ngModel)]="userObj.userName">
+  </div>
+
+  <div class="col-md-6">
+    <label >City</label>
+    <input type="text"  name="city" [(ngModel)]="userObj.city" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label >State</label>
+    <select name="state" [(ngModel)]="userObj.state" required>
+      <option selected disabled value="">Choose...</option>
+      <option value="Maharastra">Maharastra</option>
+      <option value="dheli">dheli</option>
+      <option value="goa">goa</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label >Zip</label>
+    <input type="text" name="zip" [(ngModel)]="userObj.zip" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input"  name="isTermCondition" [(ngModel)]= "userObj.isTermCondition" type="checkbox" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="button" (click)="onSave()" [disabled]="forms.invalid">Submit form</button>
+  </div>
+</form>
+
